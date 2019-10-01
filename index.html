@@ -7,7 +7,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Tabler + Admin LTE</title>
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	<link rel="stylesheet" href="css/dashboard.css">
 	<link rel="stylesheet" href="css/tabler-adminlte.css">
@@ -19,7 +20,7 @@
 			baseUrl: '.'
 		});
 	</script>
-	
+
 </head>
 
 <body class="sidebar-mini fixed">
@@ -37,6 +38,38 @@
 
 		<aside class="main-sidebar">
 			<section class="sidebar">
+
+				<!-- Begin: Navigation -->
+				<ul class="sidebar-menu tree" data-widget="tree">
+					<li class="header">Navigation</li>
+					<li class="active treeview menu-open">
+						<a href="#">
+							<i class="fas fa-tachometer-alt mr-2"></i> <span>Dashboard</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="#"><i class="far fa-circle mr-1"></i> Daily dashboard</a></li>
+							<li class="active"><a href="#"><i class="far fa-circle mr-1"></i> Monthly dashboard</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-edit"></i> <span>Forms</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu" style="display: none;">
+							<li><a href="forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
+							<li><a href="forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+							<li><a href="forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- End: Navigation -->
+
 			</section>
 		</aside>
 
@@ -47,6 +80,182 @@
 			</div>
 
 			<div class="content">
+				<!-- Begin dashboard block -->
+				<div class="row">
+					<div class="col-6 col-sm-4 col-lg-3">
+						<div class="card">
+							<div class="card-body p-3 text-center">
+								<div class="text-right text-green"> 6%
+									<i class="fas fa-chevron-up"></i>
+								</div>
+								<div class="h1 m-0 text-green">43</div>
+								<div class="text-muted mb-4">New Tickets</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-3">
+						<div class="card">
+							<div class="card-body p-3 text-center">
+								<div class="text-right text-red"> -3%
+									<i class="fas fa-chevron-down"></i>
+								</div>
+								<div class="h1 m-0 text-indigo">17</div>
+								<div class="text-muted mb-4">Closed Today</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-3">
+						<div class="card">
+							<div class="card-body p-3 text-center">
+								<div class="text-right text-green"> 10%
+									<i class="fas fa-chevron-up"></i>
+								</div>
+								<div class="h1 m-0 text-orange">7</div>
+								<div class="text-muted mb-4">New Replies</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-3">
+						<div class="card">
+							<div class="card-body p-3 text-center">
+								<div class="text-right text-green"> 4%
+									<i class="fas fa-chevron-up"></i>
+								</div>
+								<div class="h1 m-0 text-azure">27.3K</div>
+								<div class="text-muted mb-4">Follows</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End dashboard block -->
+
+				<!-- Begin Form -->
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card">
+							<div class="card-header">
+								<h3 class="card-title">My Profile</h3>
+							</div>
+							<div class="card-body">
+								<form>
+									<div class="row">
+										<div class="col-auto">
+											<span class="avatar avatar-xl"
+												style="background-image: url(demo/faces/female/9.jpg)"></span>
+										</div>
+										<div class="col">
+											<div class="form-group">
+												<label class="form-label">Email-Address</label>
+												<input class="form-control" placeholder="your-email@domain.com">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="form-label">Bio</label>
+										<textarea class="form-control"
+											rows="5">Big belly rude boy, million dollar hustler. Unemployed.</textarea>
+									</div>
+									<div class="form-group">
+										<label class="form-label">Email-Address</label>
+										<input class="form-control" placeholder="your-email@domain.com">
+									</div>
+									<div class="form-group">
+										<label class="form-label">Password</label>
+										<input type="password" class="form-control" value="password">
+									</div>
+									<div class="form-footer">
+										<button class="btn btn-primary btn-block">Save</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-8">
+						<form class="card">
+							<div class="card-body">
+								<h3 class="card-title">Edit Profile</h3>
+								<div class="row">
+									<div class="col-md-5">
+										<div class="form-group">
+											<label class="form-label">Company</label>
+											<input type="text" class="form-control" disabled="" placeholder="Company"
+												value="Creative Code Inc.">
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<div class="form-group">
+											<label class="form-label">Username</label>
+											<input type="text" class="form-control" placeholder="Username"
+												value="michael23">
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-4">
+										<div class="form-group">
+											<label class="form-label">Email address</label>
+											<input type="email" class="form-control" placeholder="Email">
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-6">
+										<div class="form-group">
+											<label class="form-label">First Name</label>
+											<input type="text" class="form-control" placeholder="Company" value="Chet">
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-6">
+										<div class="form-group">
+											<label class="form-label">Last Name</label>
+											<input type="text" class="form-control" placeholder="Last Name"
+												value="Faker">
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<label class="form-label">Address</label>
+											<input type="text" class="form-control" placeholder="Home Address"
+												value="Melbourne, Australia">
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-4">
+										<div class="form-group">
+											<label class="form-label">City</label>
+											<input type="text" class="form-control" placeholder="City"
+												value="Melbourne">
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<div class="form-group">
+											<label class="form-label">Postal Code</label>
+											<input type="number" class="form-control" placeholder="ZIP Code">
+										</div>
+									</div>
+									<div class="col-md-5">
+										<div class="form-group">
+											<label class="form-label">Country</label>
+											<select class="form-control custom-select">
+												<option value="">Germany</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group mb-0">
+											<label class="form-label">About Me</label>
+											<textarea rows="5" class="form-control"
+												placeholder="Here can be your description" value="Mike">Oh so, your weak rhyme
+					You doubt I'll bother, reading into it
+					I'll probably won't, left to my own devices
+					But that's the difference in our opinions.</textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-footer text-right">
+								<button type="submit" class="btn btn-primary">Update Profile</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- End Form -->
 			</div>
 		</div>
 
