@@ -1163,8 +1163,11 @@ a:focus {
 .main-sidebar a {
   color: #495057;
 }
+.main-sidebar a:hover {
+  color: var(--primary);
+}
 .main-header {
-  background-color: #467fcf;
+  background-color: var(--primary);
 }
 .main-header a {
   color: #fff;
@@ -1172,4 +1175,22 @@ a:focus {
 .main-header .logo {
   border-right: 1px solid rgba(0, 40, 100, 0.12);
   font-weight: normal;
+}
+.treeview.active .treeview-menu {
+  background-color: var(--light);
+}
+.treeview.active .treeview-menu .active a {
+  color: var(--primary);
+}
+.treeview.menu-open > a {
+  color: var(--primary);
+}
+.treeview.menu-open > a::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: var(--primary);
+  right: 0;
+  top: 0;
 }

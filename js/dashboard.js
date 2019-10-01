@@ -5,7 +5,7 @@ require.config({
         'core': ['bootstrap', 'jquery'],
     },
     paths: {
-        'jquery': 'js/jquery-3.2.1.slim.min',
+        'jquery': 'js/jquery-3.2.1.min',
         'bootstrap': 'js/bootstrap.bundle.min',
         'core': '/js/core',
         'admin-lte-js': 'js/adminlte.min'
