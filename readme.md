@@ -10,13 +10,13 @@ assets files in directory `css` and `js` are base that you need to add to your p
 
 ```html
 <head>
-    <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-        <link rel="stylesheet" href="css/dashboard.css">
-        <link rel="stylesheet" href="css/tabler-adminlte.css">
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/tabler-adminlte.css">
 
-    <script src="js/require.min.js"></script>
+  <script src="js/require.min.js"></script>
 	<script src="js/dashboard.js"></script>
 	<script>
 		requirejs.config({
@@ -41,25 +41,25 @@ initial your layout like this
 				<a href="#" class="sidebar-toggle fa5" data-toggle="push-menu" role="button">
 				</a>
 			</nav>
-        </header>
+    </header>
 
-        <aside class="main-sidebar">
+    <aside class="main-sidebar">
 			<section class="sidebar">
-                ... menu here
-            </section>
-        </aside>
+        ... menu here
+      </section>
+    </aside>
 
-        <div class="content-wrapper">
+    <div class="content-wrapper">
 			<div class="content-header">
 				<h1 class="page-title">Dashboard</h1>
 			</div>
 
 			<div class="content">
-                ... content here
-            </div>
-        </div>
-
+          ... content here
+      </div>
     </div>
+
+  </div>
 </body>
 ```
 
