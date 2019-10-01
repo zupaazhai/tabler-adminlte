@@ -12,6 +12,14 @@
 	<link rel="stylesheet" href="css/dashboard.css">
 	<link rel="stylesheet" href="css/tabler-adminlte.css">
 
+	<script src="js/require.min.js"></script>
+	<script src="js/dashboard.js"></script>
+	<script>
+		requirejs.config({
+			baseUrl: '.'
+		});
+	</script>
+	
 </head>
 
 <body class="sidebar-mini fixed">
@@ -44,10 +52,6 @@
 
 
 	</div>
-
-	<script src="js/jquery-3.2.1.slim.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/dashboard.js"></script>
 </body>
 
 </html>
